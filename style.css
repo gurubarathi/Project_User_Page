@@ -1,0 +1,31 @@
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.displayNone{
+    display:none;
+}
+.displayBlock{
+    display: block;
+}
+/****************Main Page*******************/
+#Main{
+    height:100vh;
+    background-color: rgb(229, 171, 94);
+ 
+}
+.header{
+    background-color: aquamarine;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+}
+.profile{
+    background-color: blueviolet;
+}
+.cards{
+    background-color: rgb(65, 39, 29);
+}
