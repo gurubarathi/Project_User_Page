@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile_Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form " id="Log">
+        <div class="loginForm displayFlex" >
+            <form action="" onsubmit="return false;" id="fors">
+                <label>User Name</label>
+                <input type="text" id="name">
+                <label>Password</label>
+                <input type="password" id="password">
+                <button onclick="verifyUser()">Login</button>
+            </form>
+        </div>
+        <p id="check"></p>
+        <p id="Newsign" class="displayNone">Don't have account please sign 
+            <button onclick="createAccount()">Create Account</button>
+        </p>
+    </div>
+    <div class="form displayNone" id="Sign">
+        <div class="signinForm displayFlex">
+           <form action="" onsubmit="return false;" id="form2">
+            <label for="">Name</label>
+            <input type="text" id="sname">
+            <label>Email</label>
+            <input type="email" id="email">
+            <label>Create password</label>
+            <input type="password" id="spassword">
+            <label>Confirm password</label>
+            <input type="password" id="cpassword">
+            <button onclick="signUser()">SignIn</button>
+           </form>
+        </div>
+        <p id="sign"></p>   
+    </div>
+    <section class="mainPage displayNone" id="Main">
+        <div class="header">
+          Hello This is Header
+        </div>
+        <div class="container">
+            <div class="profile">
+
+            </div>
+            <div class="cards">
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
