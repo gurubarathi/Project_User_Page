@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile_Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/solid.css" integrity="sha512-dK9wFjXEVt5TVm/irRAXqmr+D02Kznpv3eSFK/NqWWCsBsXRsYTW/J/C1w9WYzOt9+N0JTqTPRdVtB3JdIszWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="form " id="Log">
-        <div class="loginForm displayFlex" >
-            <form action="" onsubmit="return false;" id="fors">
-                <label>User Name</label>
-                <input type="text" id="name">
-                <label>Password</label>
-                <input type="password" id="password">
-                <button onclick="verifyUser()">Login</button>
-            </form>
-        </div>
-        <p id="check"></p>
-        <p id="Newsign" class="displayNone">Don't have account please sign 
-            <button onclick="createAccount()">Create Account</button>
-        </p>
-    </div>
-    <div class="form displayNone" id="Sign">
-        <div class="signinForm displayFlex">
-           <form action="" onsubmit="return false;" id="form2">
-            <label for="">Name</label>
-            <input type="text" id="sname">
-            <label>Email</label>
-            <input type="email" id="email">
-            <label>Create password</label>
-            <input type="password" id="spassword">
-            <label>Confirm password</label>
-            <input type="password" id="cpassword">
-            <button onclick="signUser()">SignIn</button>
-           </form>
-        </div>
-        <p id="sign"></p>   
-    </div>
-    <section class="mainPage displayNone" id="Main">
-        <div class="header">
-          Hello This is Header
-        </div>
-        <div class="container">
-            <div class="profile">
 
-            </div>
-            <div class="cards">
-
+    <!--*************** Login Form ***************** -->
+    <section class="displayNone" id="Log">
+        <div class="form log_form" id="">
+            <div class="inner_container">
+                <h2>USER LOGIN</h2>
+                <div class="uimg"><img src="images/log.png" alt=""></div>
+                <div class="loginForm">
+                    <form action="" onsubmit="return false;" id="fors">
+                        <label>User Name</label>
+                        <input type="text" id="name">
+                        <label>Password</label>
+                        <input type="password" id="password">
+                        <button onclick="verifyUser()">Login</button>
+                    </form>
+                </div>
+                <div id="Newsign" class="bottomL displayNone">
+                    <p id="check"></p>
+                    <button onclick="createAccount()">forgot password?</button>
+                </div>
             </div>
         </div>
     </section>
+
+    <!--*************** SignIn Form ***************** -->
+    <section class="displayNone" id="Sign">
+        <div class="form sign_form displayNone" id="">
+            <div class="inner_container">
+                <h2>USER SIGNUP</h2>
+                <div class="uimg"><img src="images/sign.png" alt=""></div>
+                <div class="signinForm">
+                    <form action="" onsubmit="return false;" id="form2">
+                        <label for="">Name</label>
+                        <input type="text" id="sname">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                        <label>Create password</label>
+                        <input type="password" id="spassword">
+                        <label>Confirm password</label>
+                        <input type="password" id="cpassword">
+                        <button onclick="signUser()">SignIn</button>
+                    </form>
+                </div>
+                <p id="sign"></p>
+            </div>
+        </div>
+    </section>
+
+    <!--*************** Main Page ***************** -->
+    <section class="" id="Main">
+      
+            <div class="container">
+                <div class="profile">
+                    <div class="profile_img"><img src="images/pro.jpg" alt=""></div>
+                    <h3 id="profile"></h3>
+                    <h5>MY Wish List</h5>
+                    <p >Liked Cars<iconify-icon icon="mdi:car-convertible"></iconify-icon></p>
+                    <p>Liked Bikes<iconify-icon icon="ri:motorbike-fill"></iconify-icon></p>
+                    <p>Liked Foods <iconify-icon icon="material-symbols:food-bank-outline"></iconify-icon></p>
+                </div>
+                <div class="cards-container" id="cards-container">
+                </div>
+            </div>
+       
+    </section>
+
+    <!--*************** Script ***************** -->
     <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
+
 </html>
