@@ -1,7 +1,9 @@
-.displayFlex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.3px;
 }
 .displayNone{
     display:none;
@@ -9,23 +11,138 @@
 .displayBlock{
     display: block;
 }
-/****************Main Page*******************/
-#Main{
+/******************SignIn *******************/
+.log_form,.sign_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height:100vh;
-    background-color: rgb(229, 171, 94);
- 
+    background-color: #1c2e4f;
+    color: #726866;
+    font-size: large;
 }
-.header{
-    background-color: aquamarine;
+
+.loginForm,.signinForm{
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 1.2rem;
 }
+.signinForm{
+    padding:0px 30px;
+    
+}
+.loginForm input,.signinForm input{
+   display:block;
+   padding:5px 10px;
+   border-radius: 5px;
+   border:1px solid rgb(132, 197, 240);
+   margin:20px 0;
+   width:100%;
+
+}
+.loginForm input:focus,.signinForm input:focus{
+    border:none;
+    outline:1px solid rgb(186, 214, 110);
+   
+}
+.loginForm button,.signinForm button{
+    color:#726866;
+    width:100%;
+    background-color:#fcdbb6 ;
+    padding:5px  20px;
+    font-size: 1.2rem;
+    border:none;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+.inner_container h2{
+    text-align: center;
+    margin:20px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.uimg{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+}
+.uimg img{
+   width:20%;
+}
+.bottomL{
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px;
+}
+.bottomL button{
+    background-color: transparent;
+    border:none;
+    color:#726866;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+/******************LogIn *******************/
+
+/****************Main Page*******************/
 .container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
+    
 }
 .profile{
-    background-color: blueviolet;
+    background-color:#bd5d39;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  width:250px;
+  text-align: center;
 }
-.cards{
-    background-color: rgb(65, 39, 29);
+.profile_img{
+  width:100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height:auto;
+}
+.profile img{
+    width:50%;
+    border-radius:5px;
+    margin:20px 0px ;
+}
+.cards-container{
+    background-color: #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 250px;
+
+}
+.card{
+    background-color: #726866;
+    cursor:pointer;
+    display: flex;
+    flex-direction:column;
+    min-width: 200px;
+    max-width:300px;
+    min-height:300px;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    transition: 0.3s;
+}
+.card img{
+    width:250px;
+    height:250px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-text{
+    margin:0.5rem;
 }
