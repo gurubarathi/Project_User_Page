@@ -13,7 +13,7 @@
 <body>
 
     <!--*************** Login Form ***************** -->
-    <section class="displayNone" id="Log">
+    <section class=" " id="Log">
         <div class="form log_form" id="">
             <div class="inner_container">
                 <h2>USER LOGIN</h2>
@@ -29,7 +29,7 @@
                 </div>
                 <div id="Newsign" class="bottomL displayNone">
                     <p id="check"></p>
-                    <button onclick="createAccount()">forgot password?</button>
+                    <button onclick="createAccount()">New User?</button>
                 </div>
             </div>
         </div>
@@ -60,14 +60,15 @@
     </section>
 
     <!--*************** Main Page ***************** -->
-    <section class="" id="Main">
+    <section class="displayNone" id="Main">
       
             <div class="container">
                 <div class="profile">
                     <div class="profile_img"><img src="images/pro.jpg" alt=""></div>
                     <h3 id="profile"></h3>
                     <h5>MY Wish List</h5>
-                    <p >Liked Cars<iconify-icon icon="mdi:car-convertible"></iconify-icon></p>
+                    <p onclick="showCars()"> Cars<iconify-icon icon="mdi:car-convertible"></iconify-icon>
+                    </p>
                     <p>Liked Bikes<iconify-icon icon="ri:motorbike-fill"></iconify-icon></p>
                     <p>Liked Foods <iconify-icon icon="material-symbols:food-bank-outline"></iconify-icon></p>
                 </div>
