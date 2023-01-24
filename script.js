@@ -74,7 +74,7 @@ function signUser(){
   document.getElementById("fors").reset();
 }
 /************Main Page************/
-const container=document.querySelector(".cards-container");
+var container=document.querySelector(".cards-container");
 const cars=[
     {
         cate:"Sports Car",
@@ -118,16 +118,17 @@ const cars=[
     }
     
 ]
-
-cars.forEach(e=>{
-   let code= `<div class="card">
-                        <img src="${e.path}" alt="car">
-                        <div class="card-text">
-                            <h5 class="cate">${e.cate}</h5>
-                            <h2 class="brand">${e.brand}</h2>
-                            <p class="price">${e.price}</p>
-                        </div>
-                    </div>`;
-  container.innerHTML+=code;
-}
-)
+function showCars(){
+    
+            cars.forEach(e=>{
+            let code= `<div class="card">
+                                    <img src="${e.path}" alt="car">
+                                    <div class="card-text">
+                                        <h5 class="cate">${e.cate}</h5>
+                                        <h2 class="brand">${e.brand}</h2>
+                                        <p class="price">${e.price}</p>
+                                    </div>
+                                </div>`;
+            container.innerHTML+=code;
+            })
+        }
